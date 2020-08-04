@@ -1,3 +1,5 @@
 # MNIST-Digit-Recognizer
 
+The MNIST dataset consists of 28×28 pixel grayscale images of handwritten single digits between 0 and 9. The task is to classify a given image of a handwritten digit into one of 10 classes representing integer values from 0 to 9. A Convolutional Neural Network was used to solve the problem. The first layer used in the network is a convolutional layer, which extracts features by convolving a given number of filters over the image. A pooling layer is added after the convolutional layer to reduce the spatial size of the image representation and to reduce the parameter counts which reduces the computational complexity, and to avoid overfitting. A similar set of the past two layers were added again to increase the performance of the model. As the image size is greatly reduced, a Dense fully connected layer of 64 neurons is added to classify the images. A Dense layer of 10 neurons is used as the final layer which outputs the predicted class of the input image. The model was trained for 30 epochs and achieved a training accuracy of 99.87% and a testing accuracy of 99.24%.
+
 ![](images/Accuracy.png)
